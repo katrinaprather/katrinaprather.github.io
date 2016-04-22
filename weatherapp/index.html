@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<title>Weather App</title>
+</head>
+
+<body>
+
+	<!--Structure of Temperature Converter-->
+	<div id="container">
+		<section id="temperature-reader">
+			<h1>The Weather Converter</h1>
+			<form>
+				Enter Temperature in Fahrenheit:<br>
+				<input type="text" name="degreesInFahrenheit" id="fahrenheit" size="10" maxlength="3">
+				<br>
+				<br>
+				Degrees In Celsius:<br>
+				<!-- <output> is a html5 tag to display information to a page-->
+				<div id="celsius"></div>
+				<br>
+				<br>
+				<br>
+				<input type="submit" value="Convert Temp">
+				<input type="reset" value="Reset">
+			</form>
+
+		</section>
+
+	</div><!--container-->
+
+	<!--Javascript files-->
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/weather.js"></script>
+</body>
+</html>

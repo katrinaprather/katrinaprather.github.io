@@ -1,0 +1,36 @@
+
+body{
+
+font-family: Arial, sans-serif;
+	
+}
+
+#container{
+	margin-left: auto;
+	margin-right: auto;
+}
+h1{
+	text-align: center;
+}
+table{
+
+	width: 100%;
+	
+}
+
+td{
+	vertical-align: top;
+	text-align: center;
+}
+
+label{
+	display: block;
+	padding: 5px;
+}
+
+#resetGame{
+	
+	width: 100px;
+	color: blue;
+
+}

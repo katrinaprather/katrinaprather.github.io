@@ -1,0 +1,330 @@
+/*
+Project Name: Relaxr Blog
+Client: Travis Nelson
+Author: Katrina Prather
+Developer @GA in ATL
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #033048;
+     font-size: 12px;
+     /*line-height: 1.4;*/
+     font-family: 'Open Sans', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 100%;
+  margin: auto;
+  
+}
+
+header {
+  overflow: auto;
+  max-width: 100%;
+  /*padding: 25px;*/
+  line-height: 100px;
+  
+}
+
+h1{
+  font-size: 24px;
+  float: left;
+
+}
+
+nav{
+ 
+  float: right;
+  margin-right: 50px;
+  margin-left: 50px;
+
+}
+
+.navi{
+  display: inline;  
+}
+
+/*.main*/
+#posts{
+  
+  width: 70%;
+  height: 100%;
+  float: left;
+  padding-left: 100px;
+  padding-right: 20px;
+  margin-top: 5%;
+  
+}
+
+#sidebar{
+
+  width: 20%;
+  float: left;
+
+}
+
+
+#sign_up{
+  height: 75px;
+  clear: both;
+  font-size: 22px;
+  text-align: center;
+  
+}
+
+footer {
+  height: 250px;
+  clear: both;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+header{
+  background-color: #033048;
+  
+}
+
+nav{
+  font-size: 24px;
+  color: #f9e42e;
+  font-weight: 600;
+
+}
+h1{
+  font-size: 44px;
+  color:#fff;
+  font-weight: 800;
+  letter-spacing: .75px;
+  /*padding-left: 5px;*/
+  margin-left: 96px;
+}
+
+h2{
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: #033048;
+}
+
+h3{
+  font-size: 32px;
+  font-weight: 800;
+  padding-bottom: 5px;
+}
+
+h4{
+  font-weight: 800;
+  font-size: 32px;
+  color: #f9e42e;
+  padding-top:40px;
+  letter-spacing: .75px;
+}
+
+span{
+  font-size: 22px;
+  font-weight: 600;
+  color: #033048;
+}
+img{
+  max-width: 100%;
+  
+}
+
+a{
+  text-decoration: none;
+}
+
+.navi a{
+  color:#f9e42e;
+}
+.read_more a, .readless a, span a{
+  color: #033048;
+}
+.side_nav a{
+  color: #033048;
+}
+a:visited{
+  color: #fff;
+} 
+
+a:hover{
+  color: orange;
+}
+
+nav li{
+  padding-left: 10px;
+  padding-right: 10px;
+  /*padding-top:-10%;*/
+}
+
+aside > ul{
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2em;
+  padding-bottom: 35px;
+}
+
+
+h3 + p {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+
+img + p{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#learnmoretext{
+font-size: 22px;
+  font-weight: 300;
+  line-height: 1.2em;
+  padding-top: 2px;
+
+}
+#sign_up{
+  
+  background-color: #f9e42e;
+
+}
+ /*p:nth-last-child(3):first-letter*/
+/* .main p:first-child:first-letter{
+
+  float: left;
+  color: #606161;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px; 
+  padding-left: 3px;
+  font-weight: 600;
+}*/
+
+.body_text:first-letter { float: left; color: #606161; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: Georgia; }
+
+#sign_up a{
+  border: 3px solid #033048;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  background-color: #033048;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 5px;
+
+  /*position: relative;
+  top: 25%;*/
+}
+
+footer{
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+}
+
+
+#container{
+  background-color: #f0efef;
+}
+
+.main{
+
+  margin-right: 2%;
+  line-height: 1.4;
+}
+
+#main_secondary, #main_primary{
+
+  margin-bottom: 5%;
+}
+
+#sidebar{
+  margin-top: 5%;
+  color: #033048;
+  line-height: 1.2;
+  
+}
+
+.body_text{
+  font-size: 24px;
+  font-weight: 300;
+  color: #606161;
+  display: block;
+
+}
+
+.read_more, .readless{
+  font-size: 24px;
+  font-weight: 600;
+  color: #033048;
+  text-align: right;
+  padding-right: 20px;
+  padding-bottom: 5px;
+   
+}
+
+.social_media{
+  padding-top: 30px;
+  padding-bottom: 35px;
+  padding-left: 10px;
+  padding-right: 5px;
+
+}
+
+#ad_unit{
+  width:100%;
+  margin-top: 20%;
+}
+
+

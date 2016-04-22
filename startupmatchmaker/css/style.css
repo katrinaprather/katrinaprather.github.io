@@ -1,0 +1,560 @@
+/*
+Project Name: Relaxr Landing Page
+Client: Travis Nelson
+Author: Katrina Prather
+Developer @GA in ATL
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 18px;
+     line-height: 1.4;
+     font-family: Arial, 'Oswald', sans-serif;
+     
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 100%;
+  margin: auto;
+}
+
+h1{
+  color: #ff0;
+  font-size: 28px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  margin-left: 35px;
+  display: inline-block;
+  letter-spacing: .5px;
+  
+}
+
+nav{
+  float: right;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+li{
+  display: inline;
+  padding: 5px 15px;
+}
+
+#gray_banner{
+  overflow: auto;
+}
+
+#match{
+  float: right;
+  width: 40%;
+  overflow: auto;
+  background-color: rgba(255,255,255, .8);
+  margin:  10% 3% 10% 5%;
+  padding: 4%;
+  box-shadow: 0 0 5px rgba(0,0,0,.75);
+}
+
+#search_signup{
+  clear:both;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  overflow: auto;
+}
+
+.articles{
+  clear: right;
+  float:left;
+  width: 30%;
+  margin-left: auto;
+  margin-right:auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 50px;
+  border-right: 2px solid #c6c6c6;
+}
+
+.articles:last-child{
+  border-right: none;
+}
+
+footer{
+  clear: both;
+  background-color: #000;
+  height: 60px;
+  color: #fff;
+  padding: 20px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media only screen and (min-width: 320px) { 
+
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                     /* header {
+                                        background-color: #000;
+                                        overflow: auto;
+                                        line-height: 60px;
+                                      }
+
+                                      h2{
+                                        font-size: 26px;
+                                        text-align: center;
+                                        font-family: Georgia;
+                                        font-style: italic;
+                                        font-weight: bold;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                        padding: 15px;
+                                      }
+
+                                    a{
+                                      text-decoration: none;
+                                    }
+
+                                    footer{
+                                      width: 100%;
+                                    }
+
+
+                                    .navi a {
+                                      color: #fff;
+                                    }
+
+                                    .navi{
+                                      display: none;
+                                    }
+                                    li.activate a:active{
+                                      background-color: #a1a1a1;
+                                    }
+
+                                    .find_work{
+                                      font-family: Impact, sans-serif;
+                                      font-size: 22px;
+                                      letter-spacing: .5px;
+                                    }
+
+                                    #yellow_banner{
+                                      background-color: #ff0;
+                                      height: 5px;
+                                    }
+
+                                    .article_title{
+                                      font-size: 26px;
+                                      font-weight: bold;
+                                      font-family: Georgia, serif;
+                                      padding-bottom: 5px;  
+                                    }
+
+                                    .button{
+                                      color:#000;
+                                      border-radius: 5px;
+                                      text-align: center;
+                                      padding: 5px;
+                                      display: block;
+                                      width: 100%;
+                                      font-weight: 700;
+                                      font-size: 22px;
+                                      font-family: 'Oswald';
+                                      text-transform: uppercase;
+                                      letter-spacing: .5px;
+                                    }
+                                    #hamburger{
+                                      background:none;
+                                      position:absolute;
+                                      top:0;
+                                      right:0;
+                                      line-height:45px;
+                                      padding:0px 15px 0px 15px;
+                                      color:#fff;
+                                      border:0;
+                                      font-size:1.4em;
+                                      font-weight:bold;
+                                      cursor:pointer;
+                                      outline:none;
+                                      z-index:10000000000000;
+                                    }
+                                    #cross{
+                                      background:none;
+                                      position:absolute;
+                                      top:0px;
+                                      right:0;
+                                      padding:0px 15px 0px 15px;
+                                      color:#fff;
+                                      border:0;
+                                      font-size:3em;
+                                      line-height:65px;
+                                      font-weight:bold;
+                                      cursor:pointer;
+                                      outline:none;
+                                      z-index:10000000000000;
+                                    }
+
+                                    #navbar{
+                                      z-index:1000000; 
+                                      font-weight:bold; 
+                                      font-size: 1.1em; 
+                                      width:100%; 
+                                      background:#131313;  
+                                      position:absolute; 
+                                      text-align:center;
+                                    }
+                                    #navbar ul {
+                                      margin: 0; 
+                                      padding: 0; 
+                                      list-style-type: none; 
+                                      list-style-image: none;
+                                    }
+                                    #navbar li {
+                                      display: block;   
+                                      padding:15px 0 15px 0; 
+                                      border-bottom:#1d1f20 1px solid;
+                                    }
+                                    #navbar li:hover{
+                                      display: block;    
+                                      background:#181818; 
+                                      padding:15px 0 15px 0; 
+                                      border-bottom:#1d1f20 1px solid;
+                                    }
+                                    #navbar ul li a { 
+                                      text-decoration:none;  
+                                      margin: 0px; 
+                                      color:#fff;
+                                    }
+                                    #navbar ul li a:hover {  
+                                      color: #fff; 
+                                      text-decoration:none;
+                                    }
+                                    #navbar a{
+                                      text-decoration:none; 
+                                      color:white;
+                                    }
+                                    #navbar a:hover{
+                                      text-decoration:none; 
+                                      color:white;
+                                    }
+
+                                    .glyphicon-home{
+                                      color:white; 
+                                      font-size:1.5em; 
+                                      margin-top:5px; 
+                                      margin:0 auto;
+                                    }
+                                    .button-article{
+                                      background-color: #c6c6c6;
+                                      border: 2px #c6c6c6 solid;
+                                      box-shadow: 0px 2.5px 0px #a1a1a1;
+                                      margin-top: 15%;
+                                      
+                                    }
+                                    #btn_profile{
+                                      background-color: #ff0;
+                                      border: 2px solid #ff0;
+                                      box-shadow: 0px 2.5px 0px #DED740;
+                                      margin-top: 30px;
+                                    }
+
+                                    #pic_section{
+                                      background: url("../images/coworking.jpg") no-repeat left center;
+                                      background-size: cover;
+                                      height: 250px;
+                                      max-width:100%;
+                                    }
+
+                                    #company a{
+                                      color: #ff0; 
+
+                                    }
+
+                                    #all-profiles{
+                                      background-color: #a1a1a1;
+                                      color: #000;
+                                    }
+
+
+                                    .card{
+                                      float: left;
+                                      width: 33.3%;
+                                      background-color: gray;
+                                    }
+
+                                    .card img{
+                                      max-width: 100%;
+                                      box-shadow: 0 0 5px rgba(0,0,0,.75);
+                                    }
+
+                                    .card article{
+                                      background-color: #fff;
+                                      margin: 20px;
+                                      padding: 30px;
+                                    }
+
+                                    .tags{
+                                      overflow: hidden;
+                                      display: block;
+                                    }
+                                    .tags li{
+                                      padding: 0;
+                                    }
+                                    .tags a{
+                                      background-color: #666;
+                                      color: #fff;
+                                      border-radius: 100px;
+                                      padding: 1px 12px;
+                                      margin: 0 0 5px 0;
+                                      text-transform: uppercase;
+                                    }
+
+                                    #tagline{
+                                      display:none;
+                                    }
+
+                                    #match{
+                                      display: none;
+                                    }
+
+                                    .articles{
+                                      clear: left;
+                                      float: left;
+                                      width: 100%;
+                                      border: none;
+                                    }
+                                    */
+                                    /*---cccc---*/
+
+
+
+
+ }/*end*/
+
+
+ /*---------Desktop Below this line-*/ 
+@media only screen and (min-width: 768px) {
+    header {
+      background-color: black;
+      overflow: auto;
+      line-height: 60px;
+    }
+
+    h2{
+      font-size: 26px;
+      text-align: center;
+      font-family: Georgia;
+      font-style: italic;
+      font-weight: bold;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
+    }
+
+    del{
+      color: #a1a1a1;
+    }
+
+    span{
+      border-bottom: 3px solid #ff0;
+      box-shadow: 0 1px 0 #DED740;
+    }
+
+    /* padding around a element in nav allows enlargement
+    of background area when hovering or active property is used*/
+    nav a li{
+      padding: 20px 15px;
+      color: #fff;
+    }
+
+     a{
+      text-decoration: none;
+    }
+
+    header h1{
+      font-size: 25px;
+      margin-left:22px;
+    }
+    .navi a {
+      color: #fff;
+    }
+
+    li.activate a:active{
+      background-color: #a1a1a1;
+    }
+
+    .find_work{
+      font-family: Impact, sans-serif;
+      font-size: 22px;
+      letter-spacing: .5px;
+    }
+
+    #yellow_banner{
+      background-color: #ff0;
+      height: 5px;
+    }
+
+    #tagline{
+      background-color: #c6c6c6;
+    }
+
+    #pic_section{
+      background: url("../images/coworking.jpg") no-repeat left center;
+      background-size: cover;
+      overflow: auto;
+      max-width:100%;
+    }
+
+    #match h3{
+      font-size: 26px;
+      font-weight: bold;
+      padding-bottom: 10px;
+      display: block;
+    }
+
+    .article_title{
+      font-size: 26px;
+      font-weight: bold;
+      font-family: Georgia, serif;
+      padding-bottom: 5px;  
+    }
+
+    .button{
+      color:#000;
+      border-radius: 5px;
+      text-align: center;
+      padding: 5px;
+      display: block;
+      width: 100%;
+      font-weight: 700;
+      font-size: 22px;
+      font-family: 'Oswald';
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    .button-article{
+      background-color: #c6c6c6;
+      border: 2px #c6c6c6 solid;
+      box-shadow: 0px 2.5px 0px #a1a1a1;
+      margin-top: 15%;
+      
+    }
+    #btn_profile{
+      background-color: #ff0;
+      border: 2px solid #ff0;
+      box-shadow: 0px 2.5px 0px #DED740;
+      margin-top: 30px;
+    }
+
+    #img-coworking{
+      display: none;
+    }
+    #company a{
+      color: #ff0; 
+    }
+
+    #all-profiles{
+      background-color: #a1a1a1;
+      color: #000;
+    }
+
+    .card{
+      float: left;
+      width: 33.3%;
+      background-color: gray;
+    }
+
+    .card img{
+      max-width: 100%;
+      box-shadow: 0 0 5px rgba(0,0,0,.75);
+    }
+
+    .card article{
+      background-color: #fff;
+      margin: 20px;
+      padding: 30px;
+    }
+
+    .tags{
+      overflow: hidden;
+      display: block;
+    }
+    .tags li{
+      padding: 0;
+    }
+    .tags a{
+      background-color: #666;
+      color: #fff;
+      border-radius: 100px;
+      padding: 1px 12px;
+      margin: 0 0 5px 0;
+      text-transform: uppercase;
+    }
+}/*---end desktop---*/
+
