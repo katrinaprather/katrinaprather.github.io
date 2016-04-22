@@ -357,13 +357,14 @@ figcaption.skills-caption {
   /*width: 20%%;*/
   margin: 25px;
 }
-.test{
+/*.test{
   height: 200px;
+}*/
+.project-thumbnail:nth-child(odd){
+  clear: both;
 }
-img:nth-child (2n+1){
-  clear: left;
 
-}
+
 figcaption.project-description{
   width: 500px;
 }
