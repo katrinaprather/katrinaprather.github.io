@@ -237,7 +237,7 @@ background: -webkit-linear-gradient(left, rgba(255,255,255,0.1), rgba(255,255,25
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 250px;
+    padding-top: 5em;/*250px*/
     font-size: 60px;
     background-position: 60% 90%;
     border-bottom: 1px solid #ccc;
@@ -357,9 +357,7 @@ figcaption.skills-caption {
   /*width: 20%%;*/
   margin: 25px;
 }
-/*.test{
-  height: 200px;
-}*/
+
 .project-thumbnail:nth-child(odd){
   clear: both;
 }
@@ -531,6 +529,7 @@ input[type="submit"]{
     /*display: none;*/
     cursor: pointer;
   }
+
   header nav ul.slideDown {
     height: 15em;
   }
@@ -539,6 +538,9 @@ input[type="submit"]{
     font-size: .55em;
   }
 
+.hero-content{
+  padding-top: 4em;
+}
 
   #tagline div h2{
     font-size: 1.5em;
@@ -564,8 +566,6 @@ article{
   margin: 0;
 
 }
-
-
 
 
 
