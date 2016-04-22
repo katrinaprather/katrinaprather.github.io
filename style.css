@@ -1,0 +1,694 @@
+/*
+Project Name: Katrina Prather's Website
+
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 18px;
+     /*font-family: 'Comic Sans', sans-serif;
+     font-family: '', cursive;
+    font-family: 'Cabin Sketch', cursive;
+font-family: 'Life Savers', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Bitter', serif;
+    font-family: 'Nothing You Could Do', cursive;*/
+    font-family: 'Oxygen', sans-serif;
+
+}
+
+
+/*----------------------------------------------
+ LAYOUT
+------------------------------------------------*/
+
+/* Center the container */
+#container {
+  width: 100%;
+  margin: auto;
+}
+
+
+/*-- Navigation---*/
+header .wrapper{
+  position: fixed;
+  width: 100%;
+}
+
+nav ul{
+  padding: 30px 30px 30px 0; 
+  float: right; 
+}
+
+nav ul li{
+  /*padding-left: 10px;
+  padding-right: 10px;*/
+  display: inline;
+  padding: 14px 10px 6px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  background-color: none;
+  margin-bottom: 2px; 
+}
+/*
+header #logo{
+  float:left;
+  padding: 30px 0 30px 100px;
+  font-size: 26px;
+  color: #000;
+}
+*/
+/*-- Navigation---*/
+/*
+header nav ul .mobile{
+  width: 3em;
+  height: .3em;
+  background: #121212;
+  border-radius: .5em;
+  margin-top: .25em;
+}
+
+header nav .mobile:first-of-type{
+  margin-top:.5em;
+}
+
+header nav li:first-child{
+  float:right;
+  display: none;
+  cursor: pointer;
+}
+*/
+footer{
+  clear: both;
+  background-color: #121212;
+  height: 100px;
+  color: #fff;
+  font-size: 24px;
+
+}
+ 
+/*----------------------------------------------
+ Additional Styles
+------------------------------------------------*/
+
+
+
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+footer div span{
+  padding-right: 5px;
+  
+}
+footer a{
+  color: white;
+}
+
+h1{
+/*padding: 30px 0 10px 70px;*/
+font-weight: bold;
+font-size: 1em;
+text-align: center;
+font-family: 'Oxygen', serif;
+}
+
+.text-i-am{
+color: #776274;
+font-size: .7em;
+text-transform: uppercase;
+text-shadow: .1em .1em .1em white;
+padding-bottom: 5px;
+
+}
+.text-a-and{
+  font-size: .6em;
+  font-family: 'Bitter', cursive;
+  
+  
+}
+.text-name-job{
+font-family: 'Poiret One', cursive;
+  text-transform: uppercase;
+  color: #E6E49F;
+  text-shadow: .1em .01em .1em #000;
+
+}
+
+/*ECE2D0 #f46036*/
+section .border{
+  width: 100px;
+  border-bottom: 5px solid black;
+  
+  margin-left: auto;
+  margin-right: auto;
+ 
+  margin-bottom: 5px;
+
+}
+
+.active{
+  color: red;
+  }
+
+section #bio #bio-paragraphs{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+/*.hero-bg{
+  background-image: url("../images/code.png");
+  background-repeat: no-repeat;
+  height: 750px;
+  opacity: .14;
+}
+
+.hero-fade{
+background: -webkit-linear-gradient(left, rgba(255,255,255,0.1), rgba(255,255,255,.8)); , url("../images/code.png");  For Safari 5.1 to 6.0 
+    background: -o-linear-gradient(right, rgba(255,255,255,0.8), rgba(255,255,255,.1)); ,url("../images/code.png") For Opera 11.1 to 12.0 
+    background: -moz-linear-gradient(right, rgba(255,255,255,0.8), rgba(255,255,255,.1));  ,url("../images/code.png") For Firefox 3.6 to 15 
+    background: linear-gradient(to right, rgba(255,255,255,.8), rgba(0,0,0,.9)); ,url("../images/code.png") Standard syntax (must be last) 
+    position: relative;
+}*/
+
+.change-nav{
+
+  background-color: #ccc;
+  color: black;
+}
+
+.hero-content{
+
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0.8), rgba(255,255,255,.8)), url("../images/math.jpeg");  /*For Safari 5.1 to 6.0*/ 
+    background: -o-linear-gradient(left, rgba(255,255,255,0.8), rgba(255,255,255,.1)),url("../images/math.jpeg"); /*For Opera 11.1 to 12.0*/ 
+    background: -moz-linear-gradient(left, rgba(255,255,255,0.8), rgba(255,255,255,.1)),url("../images/math.jpeg"); /*For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, rgba(255,255,255,.8), rgba(0,0,0,.9)) ,url("../images/math.jpeg"); /*Standard syntax (must be last)*/ 
+    /*background-image: url("../images/code.png");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 750px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5em;/*250px*/
+    font-size: 60px;
+    background-position: 60% 90%;
+    border-bottom: 1px solid #ccc;
+    height: 100vh;
+
+}
+
+.icon span{
+  font-size: 34px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+}
+
+.title-h1{
+  font-size: 2.75em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.scrollup{
+position: fixed;
+bottom: 5%;
+right: 2%;
+display: none;
+
+}
+
+#tagline{
+  height: 250px;
+  color: #5a5353;
+  background-color: #fff;
+  border-bottom: 1px #ccc solid;
+  
+}
+
+#tagline div h2{
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 75px;
+}
+
+#profile-pic{
+  display: block;
+  border-radius: 50%;
+  border: 3px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+#bio{
+
+  background-color: #e7e5df;
+  padding: 100px 80px;
+  line-height: 1.4;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*#title-about-me{
+  font-size: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+*/
+#bio-paragraphs{
+  font-size: 22px;
+  text-align: justify;
+  line-height: 1.5;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+
+#wrapper-skills-img{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#skills{
+  text-align: center;
+  background-color: black; /*#f5f1e3;*/
+  overflow: auto;
+
+}
+.img-skills{
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+#skills h1{
+  color: white;
+  /*font-size: 50px;
+  padding-top: 25px;
+  padding-bottom: 20px;*/
+}
+
+figcaption.skills-caption {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+}
+
+
+.project-thumbnail{
+  float: left;
+  border: 1px solid black;
+  /*width: 20%%;*/
+  margin: 25px;
+}
+
+.project-thumbnail:nth-child(odd){
+  clear: both;
+}
+
+
+figcaption.project-description{
+  width: 500px;
+}
+
+.tags{
+  clear: both;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  }
+
+.tags li{
+  padding: 0;
+  display: inline;
+}
+
+.tags a{
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 25%;
+  padding: 1px 12px;
+  margin: 5px 0 5px 0;
+  text-transform: uppercase;
+
+}
+#contact{
+  clear: both;
+background-color: #fff;
+overflow: auto;
+}
+
+
+article{
+  padding: 30px 20px 100px;
+  background-color: #fff;
+  /*margin: 40px;*/
+}
+
+#project-sample{
+  padding-top: 100px;
+  padding-bottom: 100px; 
+  background-color: #a7a7a7;
+  overflow: auto;
+
+}
+
+
+#contact h1{
+  padding-top: 100px;
+} 
+
+form{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;  
+  padding-bottom: 100px;
+
+}
+
+form input{
+  width: 450px;
+  font-size: 24px;
+  height: 50px;
+}
+form textarea{
+  width: 450px;
+  font-size: 24px;
+}
+
+form div{
+  padding-bottom: 15px;
+}
+
+input[type="submit"]{
+  width: 200px;
+  
+  height: 45px;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+
+#footer-copyright{
+  float: left;
+  width: 50%;
+}
+
+#footer-copyright p{
+  padding-left: 100px;
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+ #footer-social{
+  float: left;
+  width: 50%;
+  text-align: right;
+
+}
+
+#wrapper-social{
+  padding-right: 100px;
+  padding-top: 30px;
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+
+
+  header nav {
+    width: 100%;
+    margin: 0;
+  }
+  header nav ul li{
+    float: none;
+    display: block;
+    margin: 0;
+    font-size: 10px;
+
+  }
+  header nav ul li:first-child{
+    display:block;
+    position: absolute;
+    top:.5em;
+    right:.75em;
+  }
+  header nav ul li a {
+    display: block;
+    padding: 15px 30px;
+    /*border-bottom: 1px solid #ccc;*/
+    text-align: right;
+    font-size: 20px;
+  }
+
+  header nav ul{
+    height:1em;
+    transition: height 2s;
+    overflow: hidden;
+  }
+
+  header nav ul .mobile{
+    width: 3em;
+    height: .3em;
+    background: #121212;
+    border-radius: .5em;
+    margin-top: .25em;
+  }
+
+  header nav .mobile:first-of-type{
+    margin-top: 1.5em;
+  }
+
+  header nav li:first-child{
+    float:right;
+    /*display: none;*/
+    cursor: pointer;
+  }
+
+  header nav ul.slideDown {
+    height: 15em;
+  }
+
+  h1 {
+    font-size: .55em;
+  }
+
+.hero-content{
+  padding-top: 4em;
+}
+
+  #tagline div h2{
+    font-size: 1.5em;
+    padding-top: 4em;
+    padding-bottom: ;
+  }
+
+h1.title-h1{
+  font-size: 2em;
+}
+
+#bio-paragraphs{
+  font-size: 1em;
+  text-align: justify;
+  line-height: 1.5;
+  padding-left: 1em;
+  padding-right: 1em;
+
+}
+article {
+  /*padding: 30px 20px 100px;*/
+  background-color: #fff;
+  margin: 0 0 20px;
+
+
+}
+
+#wrapper-project>ul{
+  margin-right: auto;
+  margin-left: auto;
+  display: inline;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+}
+
+
+.project-thumbnail{
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+   
+}
+
+.project-img-sm{
+
+  /*max-width: 80%;*/
+}
+
+figcaption.project-description{
+  max-width: 80%;
+}
+
+.tags a{
+  background-color: #000;
+  color: #fff;
+  font-size: .55em;
+  border-radius: 25%;
+  padding: 1px 12px;
+  margin: 5px 0 5px 0;
+  text-transform: uppercase;
+
+}
+
+form input{
+  width: 10em;
+  font-size: 1.5em;
+  height: 50px;
+}
+form textarea{
+  width: 10em;
+  font-size: 1.5em;
+}
+
+
+
+#footer-copyright p{
+  padding-left: 100px;
+  padding-top: 30px;
+  font-size: .75em;
+}
+
+
+
+
+
+
+
+}
+/*
+form{
+ width: 50%;
+
+ margin-left: auto;
+ margin-right: auto;
+}
+.form-input{
+  width: 200px;
+}
+*/
+/*
+#hero{
+  margin-top: 250px;
+  margin-bottom: 250px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  right: 20%;
+
+ */
+
+
+
+
+
+
+/*Copied nav attributes that work*/
+/*nav{
+  width:100%;
+  font-size:16px;
+  text-align:right;
+  position:fixed;
+  background-color:#ccc;
+  opacity:0.9;
+}
+
+nav ul{
+  margin:0;
+  padding:12px;
+}
+
+nav li{
+  margin:0;
+  padding:10px;
+  display:inline;
+}
+h1{
+  width:100px;
+  text-align:left;
+  margin:0;
+  padding:12px;
+  display:inline;
+  float:left;
+}
+*/
+
