@@ -1,6 +1,6 @@
 /*
 Project Name: Katrina Prather's Website
-
+Date: 4/22/16
 */
 
 
@@ -83,8 +83,6 @@ nav ul{
 }
 
 nav ul li{
-  /*padding-left: 10px;
-  padding-right: 10px;*/
   display: inline;
   padding: 14px 10px 6px;
 }
@@ -95,16 +93,9 @@ nav ul li a {
   background-color: none;
   margin-bottom: 2px; 
 }
-/*
-header #logo{
-  float:left;
-  padding: 30px 0 30px 100px;
-  font-size: 26px;
-  color: #000;
-}
-*/
+
 /*-- Navigation---*/
-/*
+
 header nav ul .mobile{
   width: 3em;
   height: .3em;
@@ -122,7 +113,7 @@ header nav li:first-child{
   display: none;
   cursor: pointer;
 }
-*/
+
 footer{
   clear: both;
   background-color: #121212;
@@ -151,98 +142,81 @@ footer a{
   color: white;
 }
 
-h1{
-/*padding: 30px 0 10px 70px;*/
-font-weight: bold;
-font-size: 1em;
-text-align: center;
-font-family: 'Oxygen', serif;
+section .wrapper h1{
+  position: relative;
+  top: 30%;
+
 }
 
 .text-i-am{
-color: #776274;
-font-size: .7em;
-text-transform: uppercase;
-text-shadow: .1em .1em .1em white;
-padding-bottom: 5px;
+  color: #776274;
+  font-size: 2.7em; /*.7em*/
+  text-transform: uppercase;
+  text-shadow: .1em .1em .1em white;
+  padding-bottom: 5px;
+  font-family: 'Oxygen', serif;
+  text-align: center;
+  font-weight: bold;
+}
 
-}
 .text-a-and{
-  font-size: .6em;
+  font-size: 1.75em; /*.6em */
   font-family: 'Bitter', cursive;
-  
-  
+  text-align: center;
+  font-weight: bold;
 }
+
 .text-name-job{
-font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One', cursive;
   text-transform: uppercase;
   color: #E6E49F;
   text-shadow: .1em .01em .1em #000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em; /*1em*/
+}
 
+#text-hi{
+  font-size: 3em; /*1em*/
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+  font-weight: bold;
 }
 
 /*ECE2D0 #f46036*/
+
 section .border{
   width: 100px;
-  border-bottom: 5px solid black;
-  
-  margin-left: auto;
-  margin-right: auto;
- 
-  margin-bottom: 5px;
-
+  border-bottom: 5px solid #000;
+  margin: 0 auto 5px;
 }
-
-.active{
-  color: red;
-  }
 
 section #bio #bio-paragraphs{
   margin-top: 30px;
   margin-bottom: 30px;
-
 }
-/*.hero-bg{
-  background-image: url("../images/code.png");
-  background-repeat: no-repeat;
-  height: 750px;
-  opacity: .14;
-}
-
-.hero-fade{
-background: -webkit-linear-gradient(left, rgba(255,255,255,0.1), rgba(255,255,255,.8)); , url("../images/code.png");  For Safari 5.1 to 6.0 
-    background: -o-linear-gradient(right, rgba(255,255,255,0.8), rgba(255,255,255,.1)); ,url("../images/code.png") For Opera 11.1 to 12.0 
-    background: -moz-linear-gradient(right, rgba(255,255,255,0.8), rgba(255,255,255,.1));  ,url("../images/code.png") For Firefox 3.6 to 15 
-    background: linear-gradient(to right, rgba(255,255,255,.8), rgba(0,0,0,.9)); ,url("../images/code.png") Standard syntax (must be last) 
-    position: relative;
-}*/
 
 .change-nav{
-
   background-color: #ccc;
   color: black;
 }
 
 .hero-content{
-
-    background: -webkit-linear-gradient(left, rgba(255,255,255,0.8), rgba(255,255,255,.8)), url("../images/math.jpeg");  /*For Safari 5.1 to 6.0*/ 
-    background: -o-linear-gradient(left, rgba(255,255,255,0.8), rgba(255,255,255,.1)),url("../images/math.jpeg"); /*For Opera 11.1 to 12.0*/ 
-    background: -moz-linear-gradient(left, rgba(255,255,255,0.8), rgba(255,255,255,.1)),url("../images/math.jpeg"); /*For Firefox 3.6 to 15 */
-    background: linear-gradient(to left, rgba(255,255,255,.8), rgba(0,0,0,.9)) ,url("../images/math.jpeg"); /*Standard syntax (must be last)*/ 
-    /*background-image: url("../images/code.png");*/
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 750px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5em;/*250px*/
-    font-size: 60px;
-    background-position: 60% 90%;
-    border-bottom: 1px solid #ccc;
-    height: 100vh;
-
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0.8), rgba(255,255,255,.8)), url("../images/math.jpeg");  /*For Safari 5.1 to 6.0*/ 
+  background: -o-linear-gradient(left, rgba(255,255,255,0.8), rgba(255,255,255,.1)),url("../images/math.jpeg"); /*For Opera 11.1 to 12.0*/ 
+  background: -moz-linear-gradient(left, rgba(255,255,255,0.8), rgba(255,255,255,.1)),url("../images/math.jpeg"); /*For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, rgba(255,255,255,.8), rgba(0,0,0,.9)) ,url("../images/math.jpeg"); /*Standard syntax (must be last)*/ 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5em;
+  /*font-size: 60px;*/
+  background-position: 60% 90%;
+  border-bottom: 1px solid #ccc;
+  height: 100vh;
 }
 
 .icon span{
@@ -254,30 +228,27 @@ background: -webkit-linear-gradient(left, rgba(255,255,255,0.1), rgba(255,255,25
 
 .title-h1{
   font-size: 2.75em;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .scrollup{
-position: fixed;
-bottom: 5%;
-right: 2%;
-display: none;
-
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  display: none;
 }
 
 #tagline{
   height: 250px;
   color: #5a5353;
   background-color: #fff;
-  border-bottom: 1px #ccc solid;
-  
+  border-bottom: 1px #ccc solid; 
 }
 
 #tagline div h2{
   font-size: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   text-align: center;
   padding-top: 90px;
   padding-bottom: 75px;
@@ -285,63 +256,46 @@ display: none;
 
 #profile-pic{
   display: block;
-  border-radius: 50%;
+  border-radius: 70%;
   border: 3px solid #000;
-  margin-left: auto;
-  margin-right: auto;
-  
+  margin: 0 auto;
 }
 
 
 #bio{
-
   background-color: #e7e5df;
   padding: 100px 80px;
   line-height: 1.4;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
-/*#title-about-me{
-  font-size: 50px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-*/
+
 #bio-paragraphs{
-  font-size: 22px;
+  font-size: 1.25em;
   text-align: justify;
   line-height: 1.5;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 0 40px;
+}
 
+.img-skills{
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 #wrapper-skills-img{
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding-bottom: 70px;
+  padding-top: 20px;
 }
 
 #skills{
   text-align: center;
   background-color: black; /*#f5f1e3;*/
   overflow: auto;
-
-}
-.img-skills{
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  
 }
 
 #skills h1{
   color: white;
-  /*font-size: 50px;
-  padding-top: 25px;
-  padding-bottom: 20px;*/
 }
 
 figcaption.skills-caption {
@@ -350,18 +304,21 @@ figcaption.skills-caption {
   color: white;
 }
 
+#wrapper-project{
+  margin: 60px auto 0;
+  text-align: center;
+}
 
 .project-thumbnail{
   float: left;
-  border: 1px solid black;
-  /*width: 20%%;*/
-  margin: 25px;
+  border: 1px solid #000;
+  margin-left: 50px;
+  margin-bottom: 30px;
 }
 
 .project-thumbnail:nth-child(odd){
   clear: both;
 }
-
 
 figcaption.project-description{
   width: 500px;
@@ -372,58 +329,48 @@ figcaption.project-description{
   display: block;
   margin-top: 5px;
   margin-bottom: 5px;
-  }
+}
 
 .tags li{
   padding: 0;
   display: inline;
 }
 
-.tags a{
+.tags li span{
+  padding: 0;
+  display: inline;
   background-color: #000;
   color: #fff;
   font-size: 14px;
-  border-radius: 25%;
-  padding: 1px 12px;
-  margin: 5px 0 5px 0;
+  border-radius: 10px;
+  padding: 2px 12px;
   text-transform: uppercase;
-
 }
+
 #contact{
   clear: both;
-background-color: #fff;
-overflow: auto;
+  background-color: #fff;
+  padding-top: 70px;
+  overflow: auto;
 }
 
-
-article{
+li article{
   padding: 30px 20px 100px;
   background-color: #fff;
-  /*margin: 40px;*/
 }
 
 #project-sample{
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 100px; 
   background-color: #a7a7a7;
   overflow: auto;
-
 }
-
-
-#contact h1{
-  padding-top: 100px;
-} 
 
 form{
   width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px auto;
   text-align: center;  
   padding-bottom: 100px;
-
 }
 
 form input{
@@ -431,6 +378,7 @@ form input{
   font-size: 24px;
   height: 50px;
 }
+
 form textarea{
   width: 450px;
   font-size: 24px;
@@ -442,15 +390,13 @@ form div{
 
 input[type="submit"]{
   width: 200px;
-  
   height: 45px;
   color: #fff;
-  background-color: black;
+  background-color: #000;
   border: none;
   border-radius: 10px;
   font-size: 24px;
 }
-
 
 #footer-copyright{
   float: left;
@@ -485,6 +431,7 @@ input[type="submit"]{
     width: 100%;
     margin: 0;
   }
+
   header nav ul li{
     float: none;
     display: block;
@@ -492,12 +439,14 @@ input[type="submit"]{
     font-size: 10px;
 
   }
+
   header nav ul li:first-child{
-    display:block;
+    display: block;
     position: absolute;
     top:.5em;
     right:.75em;
   }
+
   header nav ul li a {
     display: block;
     padding: 15px 30px;
@@ -638,65 +587,5 @@ form textarea{
 
 
 }
-/*
-form{
- width: 50%;
 
- margin-left: auto;
- margin-right: auto;
-}
-.form-input{
-  width: 200px;
-}
-*/
-/*
-#hero{
-  margin-top: 250px;
-  margin-bottom: 250px;
-  height: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  text-transform: uppercase;
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  right: 20%;
-
- */
-
-
-
-
-
-
-/*Copied nav attributes that work*/
-/*nav{
-  width:100%;
-  font-size:16px;
-  text-align:right;
-  position:fixed;
-  background-color:#ccc;
-  opacity:0.9;
-}
-
-nav ul{
-  margin:0;
-  padding:12px;
-}
-
-nav li{
-  margin:0;
-  padding:10px;
-  display:inline;
-}
-h1{
-  width:100px;
-  text-align:left;
-  margin:0;
-  padding:12px;
-  display:inline;
-  float:left;
-}
-*/
 
