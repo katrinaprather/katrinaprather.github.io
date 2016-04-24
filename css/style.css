@@ -139,7 +139,7 @@ section .wrapper h1{
 
 .text-i-am{
   color: #b36f9c;
-  font-size: 2.7em; /*.7em*/
+  font-size: 2.7em; 
   text-transform: uppercase;
   text-shadow: .1em .1em .1em white;
   padding-bottom: 5px;
@@ -149,7 +149,7 @@ section .wrapper h1{
 }
 
 .text-a-and{
-  font-size: 1.75em; /*.6em */
+  font-size: 1.75em; 
   font-family: 'Bitter', serif;
   text-align: center;
   font-weight: 600;
@@ -162,18 +162,16 @@ section .wrapper h1{
   text-shadow: .1em .01em .1em #000;
   text-align: center;
   font-weight: bold;
-  font-size: 3em; /*1em*/
+  font-size: 3em; 
 }
 
 #text-hi{
-  font-size: 3em; /*1em*/
+  font-size: 3em; 
   font-family: 'Oxygen', sans-serif;
   text-align: center;
   text-shadow: .1em .1em .1em black;
   font-weight: 600;
 }
-
-/*ECE2D0 #f46036*/
 
 section .border{
   width: 100px;
@@ -202,7 +200,6 @@ section #bio #bio-paragraphs{
   text-align: center;
   margin: 0 auto;
   padding-top: 5em;
-  /*font-size: 60px;*/
   background-position: 60% 90%;
   border-bottom: 1px solid #ccc;
   height: 100vh;
@@ -230,7 +227,7 @@ section #bio #bio-paragraphs{
 
 #tagline{
   height: 250px;
-  color: #b36f9c;/*#5a5353*/
+  color: #b36f9c;
   background-color: #fff;
   border-bottom: 1px #ccc solid; 
 }
@@ -252,7 +249,7 @@ section #bio #bio-paragraphs{
 
 
 #bio{
-  background-color: rgba(230,232,230,.30); /*#E6E8E6;*/
+  background-color: rgba(230,232,230,.30);
   padding: 100px 80px;
   line-height: 1.4;
   margin: 0 auto;
@@ -279,7 +276,7 @@ section #bio #bio-paragraphs{
 
 #skills{
   text-align: center;
-  background-color: rgba(56,61,59,.75); /*#FCF5C7 #f5f1e3;*/
+  background-color: rgba(56,61,59,.75); 
   overflow: auto;
   border-top: #383D3B;
   border-bottom: #383D3B;
@@ -482,6 +479,7 @@ input[type="submit"]{
     padding-right: 1em;
   }
 
+/*
   #project-sample div article{
     background-color: #fff;
     margin: 0;
@@ -490,7 +488,7 @@ input[type="submit"]{
   #project-sample{
     padding-top: 100px;
     padding-bottom: 100px; 
-    background-color: #a7a7a7;
+    background-color: rgba(70,44,61,.25);
     overflow: auto;
   }
 
@@ -498,12 +496,8 @@ input[type="submit"]{
     margin-left: auto;
     margin-right: auto;
   }
-
-  .project-thumbnail{
-    float: left;
-    border: 1px solid black;
-  }
-
+*/
+  
   .project-img-sm{
     max-width: 100%;
   }
