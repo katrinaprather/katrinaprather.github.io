@@ -45,17 +45,9 @@ Date: 4/22/16
 /*******************************************/
 
 body {
-     color: #000;
-     font-size: 18px;
-     /*font-family: 'Comic Sans', sans-serif;
-     font-family: '', cursive;
-    font-family: 'Cabin Sketch', cursive;
-font-family: 'Life Savers', cursive;
-font-family: 'Poiret One', cursive;
-font-family: 'Architects Daughter', cursive;
-font-family: 'Bitter', serif;
-    font-family: 'Nothing You Could Do', cursive;*/
-    font-family: 'Oxygen', sans-serif;
+ color: rgb(56,61,59);
+ font-size: 18px;
+ font-family: 'Oxygen', sans-serif;
 
 }
 
@@ -89,7 +81,7 @@ nav ul li{
 
 nav ul li a {
   text-decoration: none;
-  color: #000;
+  color: #383D3B;
   background-color: none;
   margin-bottom: 2px; 
 }
@@ -116,7 +108,7 @@ header nav li:first-child{
 
 footer{
   clear: both;
-  background-color: #121212;
+  background-color: rgb(56,61,59);
   height: 100px;
   color: #fff;
   font-size: 24px;
@@ -146,27 +138,27 @@ section .wrapper h1{
 }
 
 .text-i-am{
-  color: #776274;
+  color: #b36f9c;
   font-size: 2.7em; /*.7em*/
   text-transform: uppercase;
   text-shadow: .1em .1em .1em white;
   padding-bottom: 5px;
-  font-family: 'Oxygen', serif;
+  font-family: 'Oxygen', sans-serif;
   text-align: center;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .text-a-and{
   font-size: 1.75em; /*.6em */
-  font-family: 'Bitter', cursive;
+  font-family: 'Bitter', serif;
   text-align: center;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .text-name-job{
   font-family: 'Poiret One', cursive;
   text-transform: uppercase;
-  color: #E6E49F;
+  color: #3DFAFF;
   text-shadow: .1em .01em .1em #000;
   text-align: center;
   font-weight: bold;
@@ -177,14 +169,15 @@ section .wrapper h1{
   font-size: 3em; /*1em*/
   font-family: 'Oxygen', sans-serif;
   text-align: center;
-  font-weight: bold;
+  text-shadow: .1em .1em .1em black;
+  font-weight: 600;
 }
 
 /*ECE2D0 #f46036*/
 
 section .border{
   width: 100px;
-  border-bottom: 5px solid #000;
+  border-bottom: 5px solid rgb(56,61,59);
   margin: 0 auto 5px;
 }
 
@@ -194,8 +187,7 @@ section #bio #bio-paragraphs{
 }
 
 .change-nav{
-  background-color: #ccc;
-  color: black;
+  background-color: #fff;
 }
 
 .hero-content{
@@ -238,7 +230,7 @@ section #bio #bio-paragraphs{
 
 #tagline{
   height: 250px;
-  color: #5a5353;
+  color: #b36f9c;/*#5a5353*/
   background-color: #fff;
   border-bottom: 1px #ccc solid; 
 }
@@ -260,7 +252,7 @@ section #bio #bio-paragraphs{
 
 
 #bio{
-  background-color: #e7e5df;
+  background-color: rgba(230,232,230,.30); /*#E6E8E6;*/
   padding: 100px 80px;
   line-height: 1.4;
   margin: 0 auto;
@@ -287,8 +279,10 @@ section #bio #bio-paragraphs{
 
 #skills{
   text-align: center;
-  background-color: black; /*#f5f1e3;*/
+  background-color: rgba(56,61,59,.75); /*#FCF5C7 #f5f1e3;*/
   overflow: auto;
+  border-top: #383D3B;
+  border-bottom: #383D3B;
 }
 
 #skills h1{
@@ -317,10 +311,6 @@ figcaption.skills-caption {
   clear: both;
 }
 
-figcaption.project-description{
-  width: 500px;
-}
-
 .tags{
   clear: both;
   display: block;
@@ -346,7 +336,7 @@ figcaption.project-description{
 
 #contact{
   clear: both;
-  background-color: #fff;
+  background-color: #fafafa;
   padding-top: 70px;
   overflow: auto;
 }
@@ -356,10 +346,20 @@ li article{
   background-color: #fff;
 }
 
+h4{
+  font-size: 1.3em;
+  padding: 20px 0 10px;
+  font-weight: bold;
+}
+
+.project-thumbnail img{
+  box-shadow: 0 0 3px rgba(0,0,0,.75);
+}
+
 #project-sample{
   padding-top: 70px;
   padding-bottom: 100px; 
-  background-color: #a7a7a7;
+  background-color: rgba(70,44,61,.25);
   overflow: auto;
 }
 
@@ -389,8 +389,8 @@ input[type="submit"]{
   width: 200px;
   height: 45px;
   color: #fff;
-  background-color: #000;
-  border: none;
+  background-color: #383D3B;
+  border: 1px solid #383D3B;
   border-radius: 10px;
   font-size: 24px;
 }
@@ -538,8 +538,6 @@ input[type="submit"]{
     padding-top: 30px;
     font-size: 1em;
   }
-
-
 
 }/*End media query*/
 
