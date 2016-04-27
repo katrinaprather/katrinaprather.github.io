@@ -470,6 +470,29 @@ input[type="submit"]{
 
   }
 
+.text-i-am{
+  
+  font-size: 1.7em; 
+  
+  padding-bottom: 5px;
+  
+}
+
+.text-a-and{
+  font-size: 1em; 
+  
+}
+
+.text-name-job{
+  
+  font-size: 2em; 
+}
+
+#text-hi{
+  font-size: 2em; 
+  
+}
+
   #tagline div h2{
    /* font-size: 2em;*/
     padding-top: 2.75em;
@@ -504,10 +527,6 @@ input[type="submit"]{
 
   }
   
-  /*figcaption.project-description{
-    max-width: 100%;
-  }
-*/
   .tags a{
     background-color: #000;
     color: #fff;
@@ -524,20 +543,20 @@ input[type="submit"]{
     height: 50px;
   }
 
-  form .form-input #message{
+  form #message{
     width: 10em;
     font-size: 1.5em;
   }
 
   #footer-copyright p{
     padding-left: 20px;
-    padding-top: 30px;
+    padding-top: 40px;
     font-size: 15px
   }
 
   #wrapper-social{
   padding-right: 20px;
-  padding-top: 30px;
+  padding-top: 40px;
   font-size: 15px;
   } 
 
