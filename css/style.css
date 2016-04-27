@@ -455,43 +455,27 @@ input[type="submit"]{
     height: 12em;
   }
 
-  /*#hero-content h1 {
-    font-size: .35em;
-  }
-
-  .hero-content{
-    padding-top: 3.5em;
-  }
-*/
-
   section .wrapper h1{
     position: relative;
     top: 25%;
-
   }
 
-.text-i-am{
-  
-  font-size: 1.7em; 
-  
-  padding-bottom: 5px;
-  
-}
+  .text-i-am{
+    font-size: 1.7em; 
+    padding-bottom: 5px;
+  }
 
-.text-a-and{
-  font-size: 1em; 
-  
-}
+  .text-a-and{
+    font-size: 1em; 
+  }
 
-.text-name-job{
-  
-  font-size: 2em; 
-}
+  .text-name-job{
+    font-size: 2em; 
+  }
 
-#text-hi{
-  font-size: 2em; 
-  
-}
+  #text-hi{
+    font-size: 2em; 
+  }
 
   #tagline div h2{
    /* font-size: 2em;*/
@@ -501,30 +485,28 @@ input[type="submit"]{
   h1.title-h1{
     font-size: 2.2em;
   }
-  #mybio{
-    font-size: 2em;
-  }
-  #bio{
 
-    padding-left: 10px;
-    padding-right: 10px;
+  #mybio-title{
+    font-size: 1.6em;
+  }
+
+  #bio{
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   #bio-paragraphs{
     font-size: 1.22em;
-    white-space: pre-wrap;
-    /*line-height: 1.5;*/
-    
+
   }
   
   section #bio #bio-paragraphs p{
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .project-thumbnail{
     width: 100%;
-
   }
   
   .tags a{
