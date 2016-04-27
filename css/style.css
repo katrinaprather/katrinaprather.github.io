@@ -179,7 +179,7 @@ section .border{
   margin: 0 auto 5px;
 }
 
-section #bio #bio-paragraphs{
+section #bio #bio-paragraphs p{
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -294,14 +294,15 @@ figcaption.skills-caption {
 
 #wrapper-project{
   margin: 60px auto 0;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .project-thumbnail{
   float: left;
   border: 1px solid #000;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-bottom: 30px;
+  width: 45%;
 }
 
 .project-thumbnail:nth-child(odd){
@@ -351,6 +352,7 @@ h4{
 
 .project-thumbnail img{
   box-shadow: 0 0 3px rgba(0,0,0,.75);
+  width: 100%;
 }
 
 #project-sample{
@@ -462,11 +464,11 @@ input[type="submit"]{
   }
 */
 
-section .wrapper h1{
-  position: relative;
-  top: 25%;
+  section .wrapper h1{
+    position: relative;
+    top: 25%;
 
-}
+  }
 
   #tagline div h2{
    /* font-size: 2em;*/
@@ -487,19 +489,25 @@ section .wrapper h1{
 
   #bio-paragraphs{
     font-size: 1.22em;
-    text-align: justify;
-    line-height: 1.5;
+    white-space: pre-wrap;
+    /*line-height: 1.5;*/
     
   }
   
-  .project-img-sm{
-    max-width: 100%;
+  section #bio #bio-paragraphs p{
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
-  figcaption.project-description{
+  .project-thumbnail{
+    width: 100%;
+
+  }
+  
+  /*figcaption.project-description{
     max-width: 100%;
   }
-
+*/
   .tags a{
     background-color: #000;
     color: #fff;
@@ -516,7 +524,7 @@ section .wrapper h1{
     height: 50px;
   }
 
-  form #message {
+  form .form-input #message{
     width: 10em;
     font-size: 1.5em;
   }
