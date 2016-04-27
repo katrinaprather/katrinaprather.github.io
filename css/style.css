@@ -373,7 +373,7 @@ form input{
   height: 50px;
 }
 
-form textarea{
+form #message{
   width: 450px;
   font-size: 24px;
 }
@@ -458,25 +458,25 @@ input[type="submit"]{
   }
 
   .hero-content{
-    padding-top: 4.5em;
+    padding-top: 3.5em;
   }
 
   #tagline div h2{
    /* font-size: 2em;*/
-    padding-top: 3em;
+    padding-top: 2.75em;
   }
 
-  /*h1.title-h1{
+  h1.title-h1{
     font-size: 2em;
   }
 
-*/
+
   #bio-paragraphs{
     font-size: 1.22em;
     text-align: justify;
     line-height: 1.5;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
   }
   
   .project-img-sm{
@@ -503,7 +503,7 @@ input[type="submit"]{
     height: 50px;
   }
 
-  form textarea{
+  form #message{
     width: 10em;
     font-size: 1.5em;
   }
