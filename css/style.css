@@ -453,14 +453,14 @@ input[type="submit"]{
     height: 12em;
   }
 
-  #hero-content h1 {
+  /*#hero-content h1 {
     font-size: .35em;
   }
 
   .hero-content{
     padding-top: 3.5em;
   }
-
+*/
   #tagline div h2{
    /* font-size: 2em;*/
     padding-top: 2.75em;
@@ -470,6 +470,11 @@ input[type="submit"]{
     font-size: 2em;
   }
 
+  #bio{
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   #bio-paragraphs{
     font-size: 1.22em;
@@ -503,7 +508,7 @@ input[type="submit"]{
     height: 50px;
   }
 
-  form #message{
+  form textarea {
     width: 10em;
     font-size: 1.5em;
   }
