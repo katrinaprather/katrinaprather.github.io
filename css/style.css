@@ -461,27 +461,35 @@ input[type="submit"]{
     padding-top: 3.5em;
   }
 */
+
+section .wrapper h1{
+  position: relative;
+  top: 25%;
+
+}
+
   #tagline div h2{
    /* font-size: 2em;*/
     padding-top: 2.75em;
   }
 
   h1.title-h1{
+    font-size: 2.2em;
+  }
+  #mybio{
     font-size: 2em;
   }
-
   #bio{
 
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   #bio-paragraphs{
     font-size: 1.22em;
     text-align: justify;
     line-height: 1.5;
-    /*padding-left: .5em;
-    padding-right: .5em;*/
+    
   }
   
   .project-img-sm{
@@ -508,16 +516,24 @@ input[type="submit"]{
     height: 50px;
   }
 
-  form textarea {
+  form #message {
     width: 10em;
     font-size: 1.5em;
   }
 
   #footer-copyright p{
-    padding-left: 100px;
+    padding-left: 20px;
     padding-top: 30px;
-    font-size: 1em;
+    font-size: 15px
   }
+
+  #wrapper-social{
+  padding-right: 20px;
+  padding-top: 30px;
+  font-size: 15px;
+  } 
+
+  
 
 }/*End media query*/
 
