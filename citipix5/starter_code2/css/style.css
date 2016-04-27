@@ -17,30 +17,6 @@ Developer @GA in NYC
      box-sizing: border-box; /* IE */
 }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-	clear: both;
-}
-
-.alignright {
-	float: right;
-	padding: 0 0 10px 10px; /* note the padding around a right floated image */
-}
-
-.alignleft {
-	float: left;
-	padding: 0 10px 10px 0; /* note the padding around a left floated image */
-}
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -64,9 +40,10 @@ body {
 
 /* Center the container */
 .container {
-	width: 960px;
-	margin: auto;
+  width: 960px;
+  margin: auto;
   padding-top: 5em;
+  text-align: center;
 }
 
 header {
@@ -102,26 +79,10 @@ header {
   vertical-align: middle;
   box-shadow: #111 0 0 20px;
 }
-#submit-btn {
-  background: #ffe500;
-  color: #000;
-  font-size: 38px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: 1px solid #111;
-  text-align: center;
-  display: inline-block;
-  width: 250px;
-  height: 72px;
-  line-height: 74px;
-  vertical-align: middle;
-  box-shadow: #111 0 0 50px;
-  font-family: helvetica, arial, sans-serif;
-  cursor: pointer;
-}
-#submit-btn:hover {
-  background: #fff600;
-}
+
+/******************************************
+/* SWITCHER BACKGROUND STYLES
+/*******************************************/
 
 .nyc {
   background-image: url(../images/nyc.jpg)
