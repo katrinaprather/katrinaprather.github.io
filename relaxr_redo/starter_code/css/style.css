@@ -262,9 +262,8 @@ font-size: 22px;
   font-weight: 600;
   padding: 5px 15px;
   border-radius: 5px;
-
-  /*position: relative;
-  top: 25%;*/
+  position: relative;
+  top: 35%;
 }
 
 footer{
@@ -312,6 +311,10 @@ footer{
   padding-right: 20px;
   padding-bottom: 5px;
    
+}
+
+.hide{
+  display:none;
 }
 
 .social_media{

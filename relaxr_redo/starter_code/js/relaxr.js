@@ -8,7 +8,7 @@ loaded before executing script*/
 	$("a").click(function(){
 		event.preventDefault();
 	});
-
+	
 	/*Functions that make specific elements
 	perform specific jQuery effects*/
 	function readMore(){
@@ -29,8 +29,8 @@ loaded before executing script*/
 
 	}
 
-$(function(){
 
+$(function(){
 
 	/*Events: When clicking elements with these classes,
 	it calls the specific function to envoke its actions*/
