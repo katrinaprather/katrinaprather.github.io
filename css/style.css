@@ -165,14 +165,6 @@ section .wrapper h1{
   font-size: 3em; 
 }
 
-#text-hi{
-  font-size: 3em; 
-  font-family: 'Oxygen', sans-serif;
-  text-align: center;
-  text-shadow: .1em .1em .1em black;
-  font-weight: 600;
-}
-
 section .border{
   width: 100px;
   border-bottom: 5px solid rgb(56,61,59);
